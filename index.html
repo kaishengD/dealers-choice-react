@@ -23,13 +23,13 @@
             render(){
                 return(
                     this.state.trainers.map((trainer)=>{
-                        <div>{trainer}</div>
+                        return <div>{trainer.name}</div>
                     })
                 )
             }
         }
         const root = document.querySelector('#root')   
-        ReactDOM.render(React.createElement(App), root);
+        ReactDOM.render(<App />, root);
     </script>
   </body>
 </html>
